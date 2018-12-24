@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<textarea id="MyID"></textarea>
+<button id="save" onclick="save()">保存</button>
+</body>
+<script>
+    var simplemde = new SimpleMDE({ element: document.getElementById("MyID") });
+    function save() {
+        alert(simplemde.value());
+    }
+</script>
+
+</html>
